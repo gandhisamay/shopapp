@@ -1,0 +1,11 @@
+//a custom exception class 
+class HttpExceptions implements Exception{ 
+  final String message ;
+  HttpExceptions(this.message);
+
+  @override
+  String toString () {
+    // return super.toString(); //will yield instanceof Http Exceptions 
+    return message ;
+  }
+}
